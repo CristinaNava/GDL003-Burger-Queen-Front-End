@@ -25,8 +25,12 @@ class Comanda extends React.Component{
                 </tr>
             </tfoot>
             </table>
-            </div>
-            
+           
+            <div class='btnSumitReset'>
+            <div id="blockSubmit"></div>
+            <div><button id='btnResetWaiter' class='btn btn-warning' type='button'>Limpiar</button></div>
+        </div> 
+    </div> 
         )
     }
 }

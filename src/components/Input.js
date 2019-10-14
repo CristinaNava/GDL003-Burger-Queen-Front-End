@@ -4,10 +4,10 @@ class InputTable extends React.Component {
    constructor(props) {
       super(props);
       
-      this.state = {
+      this.state={
          data: ''
       }
-      this.updateState = this.updateState.bind(this);
+      this.updateState=this.updateState.bind(this);
    };
    updateState(e) {
       this.setState({data: e.target.value});
@@ -15,8 +15,8 @@ class InputTable extends React.Component {
    render() {
       return (
          <div>
-            <input type = "text" value = {this.state.data} 
-               onChange = {this.updateState} />
+            <input type="text" value={this.state.data} 
+               onChange={this.updateState} />
             <h4>{this.state.data}</h4>
          </div>
       );
@@ -60,7 +60,8 @@ class InputTable extends React.Component {
           <input type="text" placeholder="Nombre del cliente" value={this.state.value} onChange={this.handleChange} />
         </label>
         <input id="AddTable" type="submit" value="ok" className="InputButtom" />
-        <a href="#Cont2"></a>
+
+        <a class="AddTable" href="#/Cont2"></a>
       </form>
     );
   }
